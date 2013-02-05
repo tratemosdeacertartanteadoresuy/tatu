@@ -48,6 +48,9 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
+        compile ":webxml:1.4.1"
+        compile ":database-session:1.1.2"
+
         compile ':heroku:1.0.1'
         compile ':cloud-support:1.0.8'
     }
