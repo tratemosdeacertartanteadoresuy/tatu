@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="org.tatu.User" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <meta name="layout" content="bootstrap"/>
@@ -20,66 +20,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>SB</td>
-                    <td>187</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>RM</td>
-                    <td>177</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>KR</td>
-                    <td>177</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                </tr>
+                <g:each in="${playerResults}" var="userDataElem" status="i">
+                    <tr>
+                        <td>${i + 1}</td>
+                        <td>${User.get(userDataElem.userId).initials}</td>
+                        <td>${userDataElem.total}</td>
+                      <g:each in="${userDataElem.stages}" var="stageId, total" >
+                        <td>${total}</td>
+                      </g:each>
+                    </tr>
+                </g:each>
                 </tbody>
             </table>
         </div>

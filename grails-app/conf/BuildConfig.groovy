@@ -48,6 +48,7 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
+        // Added to work in
         compile ":webxml:1.4.1"
         compile ":database-session:1.1.2"
 

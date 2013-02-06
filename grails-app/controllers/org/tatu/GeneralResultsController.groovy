@@ -23,12 +23,14 @@ class GeneralResultsController {
     def positions () {
         def stageList = []
         def userList = []
+        def playerResults = []
         def t = Tournament.findByActive(true)
         if (t) {
             stageList = t.stages
             userList = UserTournamentParticipation.findByTournament(((Stage)stageList.first()).tournament).collect{it.user}.sort{it.initials}
+            playerResults = getPlayersResultsMap(t)
         }
-        [stageList: stageList, userList: userList]
+        [stageList: stageList, userList: userList, playerResults: playerResults]
     }
 
     // Private Methods
@@ -69,9 +71,9 @@ class GeneralResultsController {
                 bonus = 2
             }
             mapUserData.each {key, value ->
-               if (value.TOTAL[0] == stageTotalMax) {
-                   value.TOTAL[1] = bonus
-               }
+                if (value.TOTAL[0] == stageTotalMax) {
+                    value.TOTAL[1] = bonus
+                }
             }
         }
 
@@ -79,47 +81,53 @@ class GeneralResultsController {
     }
 
     // Private Methods
-    private Map getPlayersResultsMap(Tournament t) {
+    private List getPlayersResultsMap(Tournament t) {
         def userResultList = []
         def userParticipationList = UserTournamentParticipation.findByTournament(t)
 
         userParticipationList.each { participation ->
-           def userId = participation.user.id
-           def userDataElement = [userId: userId, total: 0, stages: [:]]
+            def userId = participation.user.id
+            def userDataElement = [userId: userId, total: 0, stages: [:]]
 
-           t.stages.each {
-               def userStageTotal = 0
-               stageService.getUsersTotalStagePoints(it.id,userId).each {
-                   userStageTotal += it.points
-               }
-               userDataElement.stages[it.id] = userStageTotal
-           }
-           userResultList.add(userDataElement)
+            t.stages.each { stage ->
+                def userStageTotal = 0
+                stageService.getUsersTotalStagePoints(stage.id,userId).each {
+                    userStageTotal += it.points
+                }
+                userDataElement.stages[stage.id] = userStageTotal
+                userDataElement.total += userStageTotal
+            }
+            userResultList.add(userDataElement)
         }
 
         t.stages.each { stage ->
-
-
-            if (stage.finished && stageTotalMax) {
-                def stageUserTotal = 0
-
-
+            def stageTotalMax = 0
+            def usersWithMax = []
+            // If stage is finished, bonus must be assigned to users
+            if (stage.finished) {
+                userResultList.each { userDataElem ->
+                    def userStageTotal = userDataElem.stages[stage.id]
+                    if (stageTotalMax == userStageTotal) {
+                        usersWithMax.add(userDataElem)
+                    } else if (stageTotalMax < userStageTotal){
+                        stageTotalMax = userStageTotal
+                        usersWithMax.clear()
+                        usersWithMax.add(userDataElem)
+                    }
+                }
                 def bonus = 4
-                if (stageUserTotal > 2) {
+                if (usersWithMax.size() > 2) {
                     bonus = 1
-                } else if (stageUserTotal == 2) {
+                } else if (usersWithMax == 2) {
                     bonus = 2
                 }
-                mapUserData.each {key, value ->
-                    if (value.TOTAL[0] == stageTotalMax) {
-                        value.TOTAL[1] = bonus
-                    }
+
+                usersWithMax.each{ userDataElem ->
+                    userDataElem.stages[stage.id] = (userDataElem.stages[stage.id] + bonus)
+                    userDataElem.total += bonus
                 }
             }
         }
-
-
-
-        mapUserData
+        userResultList.sort { it.total }.reverse()
     }
 }

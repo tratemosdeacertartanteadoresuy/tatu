@@ -24,5 +24,6 @@ class StageService {
             }
          }
       }
+      userPoints
     }
 }
