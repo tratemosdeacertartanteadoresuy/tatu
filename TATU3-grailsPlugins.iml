@@ -4,10 +4,10 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/twitter-bootstrap-2.0.1.22/web-app" relative="/" />
-          <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/twitter-bootstrap-2.0.1.22/grails-app/views" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/jquery-1.7.1/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/fields-1.1/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/twitter-bootstrap-2.0.1.22/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.1/projects/TATU/plugins/twitter-bootstrap-2.0.1.22/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>

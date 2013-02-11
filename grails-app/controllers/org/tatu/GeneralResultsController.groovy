@@ -57,17 +57,17 @@ class GeneralResultsController {
             mapUserData[userId] = dataMap
             if (stageTotalMax < stageUserTotal) {
                 stageTotalMaxQuantity = 1;
-                stageUserTotal = 1
+                stageTotalMax = stageUserTotal
             } else if (stageTotalMax == stageUserTotal) {
-                stageUserTotal++
+                stageTotalMaxQuantity++
             }
         }
 
-        if (stage.finished && stageTotalMax) {
+        if (stage.finished) {
             def bonus = 4
-            if (stageUserTotal > 2) {
+            if (stageTotalMaxQuantity > 2) {
                 bonus = 1
-            } else if (stageUserTotal == 2) {
+            } else if (stageTotalMaxQuantity == 2) {
                 bonus = 2
             }
             mapUserData.each {key, value ->

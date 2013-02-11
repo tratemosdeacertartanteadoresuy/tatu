@@ -20,10 +20,10 @@
                             &nbsp;
                         </g:if>
                         <g:elseif test="${results[user.id][match.id][2] == 3}">
-                            <span class="badge badge-info">${results[user.id][match.id][0] + ' - ' + results[user.id][match.id][1]}</span>
+                            <span class="label label-info" style="border-radius: 9px;padding-right:9px;padding-left: 9px" title="3 puntos">${results[user.id][match.id][0] + ' - ' + results[user.id][match.id][1]}</span>
                         </g:elseif>
                         <g:elseif test="${results[user.id][match.id][2] == 5}">
-                            <span class="badge badge-important">${results[user.id][match.id][0] + ' - ' + results[user.id][match.id][1]}</span>
+                            <span class="label label-important" style="border-radius: 9px;padding-right:9px;padding-left: 9px" title="5 puntos">${results[user.id][match.id][0] + ' - ' + results[user.id][match.id][1]}</span>
                         </g:elseif>
                         <g:else>
                             ${results[user.id][match.id][0] + ' - ' + results[user.id][match.id][1]}
@@ -37,7 +37,7 @@
                 <td></td>
               <g:each in="${userList}" var="user">
                   <g:if test="${results[user.id].TOTAL[1] > 0}">
-                      <td style="text-align: center"><span class="label label-success">${results[user.id].TOTAL[0] + results[user.id].TOTAL[1]}</span></td>
+                      <td style="text-align: center" title="Ganador de la fecha - Bonus ${results[user.id].TOTAL[1]} puntos"><span class="label label-success" style="padding-left: 15px;padding-right: 15px">${results[user.id].TOTAL[0] + results[user.id].TOTAL[1]}</span></td>
                   </g:if>
                   <g:else>
                       <td style="text-align: center">${results[user.id].TOTAL[0]}</td>
