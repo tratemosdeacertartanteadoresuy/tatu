@@ -121,3 +121,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
         '/images/**':       ['IS_AUTHENTICATED_ANONYMOUSLY']
 ]
 
+// Database session plugin
+grails.plugin.databasesession.enabled=false
+//grails.plugin.databasesession.deleteInvalidSessions=true
+//grails.plugin.databasesession.cleanup.enabled=false
