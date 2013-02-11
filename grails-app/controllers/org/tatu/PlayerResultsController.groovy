@@ -9,11 +9,13 @@ class PlayerResultsController {
 
     def index() {
         def stageList = []
+        def playerResults = [:]
         def t = Tournament.findByActive(true)
         if (t) {
             stageList = t.stages
+            playerResults = getPlayerResultsMap((Stage)stageList.first())
         }
-        [stageList: stageList, playerResults:getPlayerResultsMap((Stage)stageList.first())]
+        [stageList: stageList, playerResults:playerResults]
     }
 
     def getStage() {

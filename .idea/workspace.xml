@@ -16,21 +16,20 @@
     <file path="/.project" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359226593138" ignored="false" />
     <file path="/Dummy.txt" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360603929654" ignored="false" />
     <file path="/messages_es.properties" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359414065588" ignored="false" />
-    <file path="/Tournament.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359233519084" ignored="false" />
-    <file path="/Stage.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359490060459" ignored="false" />
+    <file path="/Tournament.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360606475267" ignored="false" />
+    <file path="/Stage.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360605272298" ignored="false" />
     <file path="/Match.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359237644278" ignored="false" />
     <file path="/Result.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359231618672" ignored="false" />
     <file path="/User.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359236233445" ignored="false" />
     <file path="/TournamentController.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359236553385" ignored="false" />
     <file path="/bootstrap.gsp" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359820051940" ignored="false" />
-    <file path="/index.gsp" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359491868085" ignored="false" />
+    <file path="/index.gsp" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360608150069" ignored="false" />
     <file path="/auth.gsp" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359252064926" ignored="false" />
     <file path="/Config.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360604427305" ignored="false" />
     <file path="/Roles.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359255273836" ignored="false" />
-    <file path="/BootStrap.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359255387998" ignored="false" />
-    <file path="$PROJECT_DIR$/test/unit/org/tatu/PlayerResultsControllerTests.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359284612646" ignored="false" />
+    <file path="/BootStrap.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360607041546" ignored="false" />
     <file path="/_stageResults.gsp" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360595350808" ignored="false" />
-    <file path="/PlayerResultsController.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359819473435" ignored="false" />
+    <file path="/PlayerResultsController.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1360607777942" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/org/tatu/ResultPredictionTests.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359322853070" ignored="false" />
     <file path="/ResultPrediction.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359322923476" ignored="false" />
     <file path="/ScorePredictionService.groovy" changelist="a7d50731-4ab8-4e43-bbd8-67b9dc8a22e0" time="1359326405967" ignored="false" />
@@ -121,19 +120,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <file leaf-file-name="Stage.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/Stage.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.030411448">
+            <state line="7" column="16" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.1458333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="2" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.0">
+            <state line="47" column="100" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerResultsController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/tatu/PlayerResultsController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="12" selection-start="347" selection-end="360" vertical-scroll-proportion="-8.391304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_stageResults.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/playerResults/_stageResults.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/playerResults/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="49" selection-start="804" selection-end="804" vertical-scroll-proportion="0.6572581">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tournament.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/Tournament.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.4791667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/User.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="24" selection-start="471" selection-end="471" vertical-scroll-proportion="-6.0416665">
               <folding />
             </state>
           </provider>
@@ -149,13 +204,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/org/tatu/Stage.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/org/tatu/ScorePrediction.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/generalResults/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/org/tatu/UserTournamentParticipation.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/playerResults/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/playerResults/positions.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/org/tatu/PlayerResultsController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/bootstrap.gsp" />
         <option value="$PROJECT_DIR$/src/groovy/org/tatu/dto/UserMatchPoints.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/org/tatu/StageService.groovy" />
@@ -165,6 +215,11 @@
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/org/tatu/Stage.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/org/tatu/Tournament.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/org/tatu/PlayerResultsController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/playerResults/index.gsp" />
       </list>
     </option>
   </component>
@@ -371,7 +426,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -379,12 +434,12 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48034188" sideWeight="0.4939394" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3897436" sideWeight="0.4939394" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3931624" sideWeight="0.5007576" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21200608" sideWeight="0.2350937" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3378788" sideWeight="0.24444444" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63931626" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3378788" sideWeight="0.36068377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3378788" sideWeight="0.61025643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -459,49 +514,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/groovy/org/tatu/dto/UserMatchPoints.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="244" selection-end="250" vertical-scroll-proportion="0.5543478" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/Stage.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/generalResults/positions.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/org/tatu/StageService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/generalResults/_stageResults.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="115" selection-start="2223" selection-end="2223" vertical-scroll-proportion="-4.0612245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/tatu/GeneralResultsController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="43" selection-start="2955" selection-end="2955" vertical-scroll-proportion="-11.086957">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/scaffolding.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.848921">
@@ -556,14 +568,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="2" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.0">
+        <state line="126" column="2" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.78711987">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.030411448">
+        <state line="27" column="8" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.8211091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/User.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="471" selection-end="471" vertical-scroll-proportion="-6.0416665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/Stage.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.1458333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/org/tatu/Tournament.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.4791667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="100" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/org/tatu/PlayerResultsController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="347" selection-end="360" vertical-scroll-proportion="-8.391304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/playerResults/_stageResults.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/playerResults/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="49" selection-start="804" selection-end="804" vertical-scroll-proportion="0.6572581">
           <folding />
         </state>
       </provider>

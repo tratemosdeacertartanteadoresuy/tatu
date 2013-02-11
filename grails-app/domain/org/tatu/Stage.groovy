@@ -4,7 +4,9 @@ class Stage {
 	
 	String name
     Date startingDate = new Date()
-	
+
+    List matches
+
 	static hasMany = [matches: Match]
     static belongsTo = [tournament:Tournament]
 	

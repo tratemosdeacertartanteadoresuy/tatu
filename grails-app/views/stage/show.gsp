@@ -67,6 +67,15 @@
 
          </g:if>
          
+         <g:if test="${stageInstance?.startingDate}">
+
+            <dt><g:message code="stage.startingDate.label" default="Starting Date" /></dt>
+            
+            <dd><g:formatDate date="${stageInstance?.startingDate}" /></dd>
+            
+
+         </g:if>
+         
          <g:if test="${stageInstance?.tournament}">
 
             <dt><g:message code="stage.tournament.label" default="Tournament" /></dt>

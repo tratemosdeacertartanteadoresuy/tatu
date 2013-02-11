@@ -7,7 +7,16 @@
 		<g:message code="stage.matches.label" default="Matches" />
 		
 	</label>
-	<g:select name="matches" from="${org.tatu.Match.list()}" multiple="multiple" optionKey="id" size="5" value="${stageInstance?.matches*.id}" class="many-to-many"/>
+	
+<ul class="one-to-many">
+<g:each in="${stageInstance?.matches?}" var="m">
+    <li><g:link controller="match" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="match" action="create" params="['stage.id': stageInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'match.label', default: 'Match')])}</g:link>
+</li>
+</ul>
+
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: stageInstance, field: 'name', 'error')} ">
@@ -16,6 +25,14 @@
 		
 	</label>
 	<g:textField name="name" value="${stageInstance?.name}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: stageInstance, field: 'startingDate', 'error')} required">
+	<label for="startingDate">
+		<g:message code="stage.startingDate.label" default="Starting Date" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="startingDate" precision="day"  value="${stageInstance?.startingDate}"  />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: stageInstance, field: 'tournament', 'error')} required">

@@ -17,7 +17,10 @@
                 </g:each>
             </ul>
             <div id="stageDetails">
-              <g:render template="stageResults" model="[stage: stageList?.first(), results:playerResults]"/>
+               <g:if test="${stageList.size() > 0}">
+                   <g:render template="stageResults" model="[stage: stageList?.first(), results:playerResults]"/>
+               </g:if>
+
             </div>
         </div>
     </div>

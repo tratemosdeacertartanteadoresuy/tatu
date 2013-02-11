@@ -49,6 +49,8 @@
             
             <g:sortableColumn property="name" title="${message(code: 'stage.name.label', default: 'Name')}" />
             
+            <g:sortableColumn property="startingDate" title="${message(code: 'stage.startingDate.label', default: 'Starting Date')}" />
+            
             <th class="header"><g:message code="stage.tournament.label" default="Tournament" /></th>
             
             <th></th>
@@ -60,6 +62,8 @@
 
                
                <td>${fieldValue(bean: stageInstance, field: "name")}</td>
+               
+               <td><g:formatDate date="${stageInstance.startingDate}" /></td>
                
                <td>${fieldValue(bean: stageInstance, field: "tournament")}</td>
                
